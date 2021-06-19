@@ -1,0 +1,9 @@
+ *{
+    font-family: 'Ubuntu', sans-serif;
+ }
+.navbar-brand{
+    font-size: 35px;
+}
+.nav-item{
+    font-size: 25px;
+}
