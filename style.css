@@ -1,9 +1,95 @@
  *{
     font-family: 'Ubuntu', sans-serif;
  }
+.navbar{
+    background-color: rgb(0, 109, 119);
+}
 .navbar-brand{
     font-size: 35px;
 }
 .nav-item{
     font-size: 25px;
 }
+body{
+    height: 100vh;
+}
+.footer{
+    margin-top:10vh ;
+    background-color: rgb(131, 197, 190);
+}
+.footer-text{
+    color: rgb(11, 30, 48);
+}
+.icon-heart{
+    color: red;
+}
+.foot{
+    margin-left:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    color: rgb(11, 30, 48);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.map img{
+    height: 900px;
+}
+.map{
+    text-align: center;
+}
+.abus{
+    font-size: 40px;
+    text-align: center;
+}
+.main_heading{
+    font-size: 65px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.name{
+    font-size: 30px;
+    text-align: center;
+}
+.details{
+    text-align: center;
+}
+.list{
+    font-size: 35px;
+    text-align: center;
+}
+.list ul{
+    list-style-type: none;
+}
+.list li{
+    display: inline;
+    padding-right: 20px;
+}
+.fa-instagram{
+    color: rgb(219, 54, 145);
+}
+.fa-linkedin{
+    color: royalblue;
+}
+.fa-twitter{
+    color:  #00acee;
+}
+.col-xl-3{
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-right: 85px;
+    background-color: rgb(255, 236, 230);
+    box-shadow: black 2px 2px 10px;
+    
+}
+
+.profile{
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+}
+.profile img{
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 2px 2px 5px;
+}
+
