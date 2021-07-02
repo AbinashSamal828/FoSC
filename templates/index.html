@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6364131172.js" crossorigin="anonymous"></script>
+
+    <title>FoSc</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand " href="/index">Fo<small class="text-muted">od</small> S<small
+                class="text-muted">hortage</small> C<small class="text-muted">ure</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/contactus">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main_heading my-5 text-center display-4">
+        <h1>
+            FoSC
+        </h1>
+        <hr class="w-25 mx-auto">
+    </div>
+    <div class="map">
+        <img src="{{url_for('static', filename='indiamap.png')}}" alt="indiamap" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="Odisha" title="Odisha" href="https://public.tableau.com/views/Odisha_16252148561520/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="722,1118,729,1090,770,1049,753,1005,794,1009,777,978,787,944,821,934,838,879,865,866,903,866,910,883,937,879,950,893,967,859,1042,889,998,910,1001,941,995,968,967,992,937,998,913,988,906,1009,899,1029,865,1056,835,1029,821,1053,804,1070,790,1087,777,1073,770,1104,749,1104,736,1111"
+                shape="poly">
+            <area target="" alt="West Bengal" title="West Bengal" href="https://public.tableau.com/views/WestBengal_16252228649440/Dashboard1?:language=en-US&:retry=yes&:display_count=n&:origin=viz_share_link
+            " coords="998,858,991,827,978,803,954,800,978,769,1012,763,1036,732,1036,677,1046,647,1032,620,1042,603,1097,585,1124,599,1114,630,1087,623,1059,613,1066,633,1063,660,1090,677,1059,694,1053,715,1063,728,1076,739,1073,759,1090,803,1117,891,1066,912,1046,878,1015,867"
+                shape="poly">
+            <area target="" alt="Sikkim" title="Sikkim" href="https://public.tableau.com/views/Sikkim_16252154549550/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1036,595,1087,581,1066,564,1073,530,1053,516,1032,526,1036,550" shape="poly">
+            <area target="" alt="Chattisgarh" title="Chattisgarh" href="https://public.tableau.com/views/Chhattisgarh_16251186713090/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="715,1113,661,1062,678,1032,698,1021,674,1004,674,929,691,885,722,861,756,844,777,817,732,793,790,786,818,759,862,824,855,854,824,872,814,912,787,916,770,957,770,984,749,994,749,1018,756,1042,726,1069"
+                shape="poly">
+            <area target="" alt="Madhya Pradesh" title="Madhya Pradesh" href="https://public.tableau.com/views/MadhyaPradesh_16251426179670/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="327,872,347,814,375,786,371,749,371,708,392,722,419,718,412,752,395,763,412,776,439,749,477,759,491,732,484,705,511,701,501,674,477,681,460,660,555,603,586,620,572,657,545,674,552,698,538,715,552,742,565,756,589,742,572,691,613,705,640,705,651,688,657,708,681,708,715,718,726,698,743,715,760,735,783,725,780,756,780,783,736,783,729,800,756,817,736,831,726,848,702,861,678,882,664,902,634,892,596,892,576,909,548,902,518,909,514,875,497,882,467,892,453,916,422,906,385,906"
+                shape="poly">
+            <area target="" alt="Maharashtra" title="Maharashtra" href="https://public.tableau.com/views/Maharashtra_16251997332540/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="242,988,269,998,300,991,293,960,310,967,327,943,313,933,337,916,330,892,354,906,378,923,409,923,433,926,436,947,460,933,484,902,508,902,504,923,531,930,552,913,572,926,593,913,630,913,661,916,664,940,661,960,664,981,671,1005,664,1022,644,1049,624,1008,610,1022,582,1005,545,999,545,1016,528,1029,511,1040,504,1070,487,1080,460,1097,439,1114,429,1131,402,1128,378,1138,371,1155,334,1172,313,1176,324,1203,296,1223,276,1210,259,1104,245,1077"
+                shape="poly">
+            <area target="" alt="Gujarat" title="Gujarat" href="https://public.tableau.com/views/Gujarat_16251195329670/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="7,766,34,759,44,776,20,790,34,800,65,814,116,810,133,790,143,807,129,834,92,848,55,844,44,861,72,878,89,906,106,926,136,936,174,933,201,929,215,912,215,878,215,851,238,858,249,892,245,926,259,950,259,970,307,946,300,919,317,909,303,885,317,865,317,837,330,824,303,793,262,735,170,715,174,739,157,749,126,739,109,749,72,742,44,732"
+                shape="poly">
+            <area target="" alt="Andhra Pradesh" title="Andhra Pradesh" href="https://public.tableau.com/views/AndhraPradesh_16250773999930/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="460,1268,511,1257,484,1237,511,1217,514,1200,504,1166,521,1135,514,1084,538,1063,528,1036,548,1033,559,1012,586,1033,613,1026,634,1033,637,1063,661,1070,674,1091,688,1111,702,1118,722,1121,760,1118,780,1091,797,1091,831,1060,852,1057,875,1060,852,1091,828,1108,814,1138,770,1148,770,1176,739,1196,715,1196,705,1217,688,1230,668,1227,647,1244,651,1271,654,1291,654,1315,654,1332,661,1349,627,1366,603,1373,562,1373,552,1332,525,1322,501,1332,497,1295,463,1295"
+                shape="poly">
+            <area target="" alt="goa" title="goa" href="https://public.tableau.com/views/Goa_16251189152190/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="279,1221,320,1231,310,1282,290,1244" shape="poly">
+            <area target="" alt="karnataka" title="karnataka" href="https://public.tableau.com/views/Karnataka_16251422075300/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="313,1285,320,1227,337,1196,320,1179,361,1172,388,1166,409,1155,399,1131,443,1142,446,1114,467,1118,491,1091,508,1104,501,1128,497,1159,491,1196,473,1213,470,1234,467,1251,450,1268,456,1295,463,1312,480,1322,456,1329,477,1346,494,1349,514,1343,538,1356,552,1377,535,1390,504,1394,494,1417,504,1435,484,1445,460,1452,436,1455,416,1428,388,1421,375,1387,347,1387"
+                shape="poly">
+            <area target="" alt="kerela" title="kerela" href="https://public.tableau.com/views/Kerala_16251424119260/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="351,1390,399,1438,439,1462,460,1503,467,1530,460,1547,484,1537,477,1574,487,1588,473,1601,473,1635,443,1612,429,1574,429,1537,405,1509,402,1469,378,1445,358,1424"
+                shape="poly">
+            <area target="" alt="Tamil Nadu" title="Tamil Nadu" href="https://public.tableau.com/views/TamilNadu_16252156812890/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="450,1467,511,1450,504,1410,535,1396,569,1413,582,1389,610,1379,637,1372,657,1362,657,1396,630,1437,617,1464,634,1474,637,1495,630,1522,600,1529,593,1546,593,1549,576,1573,593,1587,552,1590,535,1607,535,1627,514,1634,494,1648,480,1614,487,1590,501,1566,487,1532,470,1519,467,1495"
+                shape="poly">
+            <area target="" alt="Puducherry" title="Puducherry" href="#" coords="623,1462,637,1472,637,1438"
+                shape="poly">
+            <area target="" alt="Jharkhand" title="Jharkhand" href="https://public.tableau.com/views/Jharkhand_16251419755450/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="821,750,838,777,855,777,849,801,859,815,859,839,872,859,903,849,910,873,937,869,951,845,971,849,992,856,975,815,940,801,950,777,967,774,1005,760,1022,736,1029,706,995,733,971,736,944,723,923,747,892,743,852,736"
+                shape="poly">
+            <area target="" alt="Rajasthan" title="Rajasthan" href="https://public.tableau.com/views/Rajasthan_16252152851690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="160,707,215,707,252,714,266,727,286,717,279,741,293,758,303,778,334,799,351,806,344,775,361,782,361,751,358,721,364,700,392,697,395,714,416,710,433,721,422,738,409,761,443,738,470,741,473,700,494,690,456,676,453,649,487,629,531,601,504,598,514,571,497,550,477,561,480,533,453,537,433,550,426,523,399,465,364,452,358,424,307,424,276,479,249,489,238,513,221,526,211,543,164,543,150,516,136,533,116,557,92,578,95,601,126,605,119,629,123,652,133,669,150,669"
+                shape="poly">
+            <area target="" alt="Haryana" title="Haryana" href="https://public.tableau.com/views/Haryana_16251414623690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="364,415,392,422,399,439,416,425,443,429,450,402,470,408,487,388,504,402,487,439,494,477,480,504,491,517,508,517,491,545,477,524,460,531,439,538,433,511,416,494,409,463,368,449"
+                shape="poly">
+            <area target="" alt="Delhi" title="Delhi" href="#" coords="497,482,484,506,511,509" shape="poly">
+            <area target="" alt="Punjab" title="Punjab" href="https://public.tableau.com/views/Punjab_16252150162020/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="324,411,354,411,375,400,399,428,416,417,436,421,443,390,460,400,470,380,463,353,439,336,426,305,422,281,399,281,402,302,375,305,358,319,371,343"
+                shape="poly">
+            <area target="" alt="Himanchal Pradesh" title="Himanchal Pradesh" href="https://public.tableau.com/views/HimachalPradesh_16251417767870/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="426,282,439,252,460,235,487,242,511,259,531,245,531,265,555,259,559,293,572,320,572,347,535,337,521,357,514,381,487,371,470,344,443,323"
+                shape="poly">
+            <area target="" alt="Jammu-Kashmir" title="Jammu-Kashmir" href="#"
+                coords="392,276,433,262,422,228,453,231,477,218,491,238,514,242,528,221,535,248,555,252,572,265,579,282,617,259,600,228,576,221,586,194,576,187,606,187,623,156,640,136,651,102,603,75,555,92,518,105,504,88,477,88,473,61,443,41,416,7,382,10,351,13,337,27,310,27,290,41,273,61,279,78,303,78,313,92,330,92,334,112,351,122,330,143,310,156,317,177,320,235"
+                shape="poly">
+            <area target="" alt="Chandigarh" title="Chandigarh" href="#" coords="470,388,470,357,491,377" shape="poly">
+            <area target="" alt="Uttarakhand" title="Uttarakhand" href="https://public.tableau.com/views/Uttarakhand_16252227286000/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="521,401,531,381,531,353,555,347,572,353,593,343,606,367,627,367,647,377,654,401,685,405,661,428,640,483,610,490,579,466,545,428,528,435"
+                shape="poly">
+            <area target="" alt="Uttar Pradesh" title="Uttar Pradesh" href="https://public.tableau.com/views/UttarPradesh_16252224772110/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="511,402,521,440,535,450,552,443,603,494,644,504,664,501,695,518,729,549,773,556,804,569,831,569,852,596,835,613,841,634,872,654,838,658,811,692,821,726,818,743,790,763,783,726,780,709,760,716,722,688,705,709,661,695,654,675,627,702,582,685,562,692,582,729,555,739,545,705,569,664,596,624,559,590,514,583,501,538,514,511,501,474,487,440"
+                shape="poly">
+            <area target="" alt="Bihar" title="Bihar" href="https://public.tableau.com/views/Bihar_16251182424800/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="838,558,879,585,923,605,978,612,1029,612,1039,643,1029,674,995,718,957,718,937,701,930,721,899,731,862,725,824,721,818,691,845,663,882,657,872,640,852,619,855,592"
+                shape="poly">
+            <area target="" alt="Assam" title="Assam" href="https://public.tableau.com/shared/8BYDJGPXG?:display_count=n&:origin=viz_share_link
+            " coords="1128,629,1124,588,1148,574,1179,581,1223,567,1240,578,1247,557,1281,554,1308,554,1335,513,1400,482,1403,506,1417,520,1339,574,1322,595,1325,615,1305,622,1294,639,1301,656,1288,704,1254,721,1257,676,1257,646,1223,612,1189,632"
+                shape="poly">
+            <area target="" alt="Arunachal Pradesh" title="Arunachal Pradesh" href="https://public.tableau.com/views/ArunachalPradesh_16251170313370/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1233,556,1233,549,1206,536,1243,515,1267,491,1288,457,1311,454,1342,423,1373,427,1417,400,1427,417,1441,440,1427,461,1478,464,1485,481,1465,505,1478,532,1444,519,1400,560,1386,546,1424,512,1407,474,1342,502,1301,546"
+                shape="poly">
+            <area target="" alt="Meghalaya" title="Meghalaya" href="https://public.tableau.com/views/Meghalaya_16252138961220/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1131,635,1128,669,1182,679,1240,679,1247,645,1219,621,1189,638" shape="poly">
+            <area target="" alt="Nagaland" title="Nagaland" href="https://public.tableau.com/views/Nagaland_16252145649030/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1308,658,1308,627,1328,610,1335,580,1376,549,1390,573,1376,600,1376,641,1359,620,1346,641,1328,641"
+                shape="poly">
+            <area target="" alt="Manipur" title="Manipur" href="https://public.tableau.com/views/Manipur_16252136298950/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1298,724,1294,686,1308,652,1346,645,1363,628,1363,649,1369,676,1346,731" shape="poly">
+            <area target="" alt="Tripura" title="Tripura" href="https://public.tableau.com/views/Tripura_16252221899770/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1209,788,1202,750,1226,726,1250,709,1250,754,1237,774,1237,798,1223,801" shape="poly">
+            <area target="" alt="Mizoram" title="Mizoram" href="https://public.tableau.com/views/Mizoram_16252142895690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+            " coords="1257,756,1260,719,1291,705,1291,729,1315,739,1315,787,1294,794,1311,845,1301,865,1277,865,1271,804"
+                shape="poly">
+            <area target="" alt="Daman and Diu" title="Daman and Diu" href="#" coords="146,946,164,932,174,946,157,956"
+                shape="poly">
+            <area target="" alt="Lakshadweep" title="Lakshadweep" href="#" coords="167,1392,296,1491,232,1637,136,1508"
+                shape="poly">
+            <area target="" alt="Andaman and Nicobar" title="Andaman and Nicobar" href="#"
+                coords="1352,1222,1288,1293,1274,1467,1155,1480,1138,1555,1322,1569,1400,1685,1444,1685,1400,1542,1492,1545,1478,1494,1369,1487,1431,1337,1393,1218"
+                shape="poly">
+            <area target="" alt="Dadar and Nagar Haveli" title="Dadar and Nagar Haveli" href="#"
+                coords="238,941,255,951,245,975,225,954" shape="poly">
+        </map>
+    </div>
+    <footer class="footer py-3 ">
+        <div class="foot">
+            <div class="footer-text"> Made with <i class="far fa-heart icon-heart"></i> by Ashis and Abinash</div>
+            <div class="copyright"><i class="far fa-copyright"></i> THE 2A .pvt Ltd</div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

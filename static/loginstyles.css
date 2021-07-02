@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('wheat-1845835_1920.jpg');
+}
+.container{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginbox{
+    height: 430px;
+    width: 300px;
+    color:rgb(8, 8, 8);
+    background-color: rgb(228, 188, 10,0.7);
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-top:100px ;
+    box-shadow: 5px 5px 10px black;
+}
+.name{
+    margin: 20px;
+    font-size: 45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+
+}
+.mandatory{
+    margin: 10px;
+}
+.loginbutton{
+    padding: 16px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(221, 137, 27,0.4);
+    color: rgb(107, 102, 102);
+    box-shadow: 2px 2px 5px black;
+}
+.login{
+    margin:10px;
+}
+.signupbox{
+    height: 550px;
+    width: 300px;
+    color:rgb(236, 239, 241);
+    background-color: rgb(42, 159, 170,0.7);
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-top:100px ;
+    box-shadow: 5px 5px 10px black;
+}
+.signupbutton{
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgba(16, 87, 194, 0.3);
+    color: rgb(232, 236, 248);
+    box-shadow: 2px 2px 5px black;
+}

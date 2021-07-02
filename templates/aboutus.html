@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6364131172.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand " href="index.html">Fo<small class="text-muted">od</small> S<small
+        <a class="navbar-brand " href="/index">Fo<small class="text-muted">od</small> S<small
                 class="text-muted">hortage</small> C<small class="text-muted">ure</small></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,30 +26,35 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index">Home</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/aboutus">About Us<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact Us</a>
+                    <a class="nav-link " href="/contactus">Contact Us </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="main_heading my-5 text-center display-4">
-        <h1>
-            FoSC
-        </h1>
+    <div class="main_heading my-5 text-center ">
+        About Us
         <hr class="w-25 mx-auto">
     </div>
-    <div class="map">
-        <img src="indiamap.png" alt="indiamap">
+    <div class="container abus">
+        <p>Fosc is a website that predicts the probability of food shortage in a state .It processes
+            the data of each state's availability of food, food consumed by the people of that state and the
+            population of that state and then displays the condition of the state .It would help the indian government
+            in
+            knowing the summary and condition of all the states accross the country .Thus the government can plan
+            accordingly
+            and the problem of food shortage will be solved.
+        </p>
     </div>
     <footer class="footer py-3 ">
         <div class="foot">
-            <div class="footer-text"> Made with <i class="far fa-heart icon-heart"></i> by   Ashis and Abinash</div>
+            <div class="footer-text"> Made with <i class="far fa-heart icon-heart"></i> by Ashis and Abinash</div>
             <div class="copyright"><i class="far fa-copyright"></i> THE 2A .pvt Ltd</div>
         </div>
     </footer>

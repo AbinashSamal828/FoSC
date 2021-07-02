@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='loginstyles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginbox">
+            <div class="name">FoSC</div>
+            <div class="login">LOGIN</div>
+            <form method="POST">
+                <label for="Username">Enter Username* <div class="mandatory"></div></label>
+                <input id="Username" name="Username" required aria-required="true" placeholder="Username" required="">
+                <br>
+                <label for="password">Enter password*<div class="mandatory"></div></label>
+                <input id="password" name="Password" type="password" aria-required="true" placeholder="password" required="">
+                <br>
+                <button class="loginbutton" type="submit">SUBMIT</button>
+                <button class="loginbutton"><a href="/register">REGISTER</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
