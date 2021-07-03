@@ -54,5 +54,9 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@myapp.route("/howitworks")
+def howitworks():
+    return render_template("howitworks.html")
+
 if (__name__=="__main__"):
     myapp.run(debug=True)
