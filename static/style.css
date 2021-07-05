@@ -86,17 +86,3 @@ body{
     padding: 30px;
     box-shadow: 2px 2px 5px;
 }
-nav.index-navbar{
-    width: 1518px;
-}
-footer.index-foot{
-    width:1518px;
-    margin-top: 880px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-div.index-head{
-    margin-left: 550px;
-    margin-right: 0px;
-    padding-right: 0px;
-}
