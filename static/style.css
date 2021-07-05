@@ -91,8 +91,12 @@ nav.index-navbar{
 }
 footer.index-foot{
     width:1518px;
-    margin-top: 300px;
+    margin-top: 880px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 div.index-head{
     margin-left: 550px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
