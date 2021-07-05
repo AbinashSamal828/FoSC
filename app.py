@@ -5,12 +5,12 @@ import sqlite3
 
 currentlocation=os.path.dirname(os.path.abspath(__file__))
 
-myapp=Flask(__name__)
+app=Flask(__name__)
 
-@myapp.route("/")
+@app.route("/")
 def login():
     return render_template("login.html")
-@myapp.route("/",methods=["POST"])
+@app.route("/",methods=["POST"])
 def checklogin():
     UN=request.form['Username']
     PW=request.form['Password']
@@ -27,7 +27,7 @@ def checklogin():
     else:
         return redirect("/register")
 
-@myapp.route("/register",methods=["GET","POST"])
+@app.route("/register",methods=["GET","POST"])
 def registerpage():
     if request.method=="POST":
         nUN=request.form['NUsername']
@@ -42,21 +42,21 @@ def registerpage():
         return redirect("/")
     return render_template("register.html")
 
-@myapp.route("/index")
+@app.route("/index")
 def index():
     return render_template("index.html")
 
-@myapp.route("/aboutus")
+@app.route("/aboutus")
 def about():
     return render_template("aboutus.html")
 
-@myapp.route("/contactus")
+@app.route("/contactus")
 def contact():
     return render_template("contact.html")
 
-@myapp.route("/howitworks")
+@app.route("/howitworks")
 def howitworks():
     return render_template("howitworks.html")
 
 if (__name__=="__main__"):
-    myapp.run(debug=True)
+    app.run(debug=True )
