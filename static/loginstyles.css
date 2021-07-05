@@ -69,3 +69,6 @@ input{
     color: rgb(232, 236, 248);
     box-shadow: 2px 2px 5px black;
 }
+a{
+    text-decoration: none;
+}
