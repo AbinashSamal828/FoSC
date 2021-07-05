@@ -52,7 +52,7 @@ body{
     text-align: center;
 }
 .list ul{
-    list-style-type: none;
+    list-style: none;
 }
 .list li{
     display: inline;
@@ -86,4 +86,9 @@ body{
     padding: 30px;
     box-shadow: 2px 2px 5px;
 }
-
+nav.index-navbar{
+    width: 1518px;
+}
+footer.index-foot{
+    width:1518px;
+}
