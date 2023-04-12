@@ -86,3 +86,11 @@ body{
     padding: 30px;
     box-shadow: 2px 2px 5px;
 }
+
+@media (max-width: 350px)
+{
+    .map img{
+        width: 100px;
+        height: 150px;
+    }
+}
